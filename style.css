@@ -1,0 +1,30 @@
+.montserrat-mont {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: "Montserrat", sans-serif; 
+}
+.container{
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stats_container{
+    border: 1px;
+}
