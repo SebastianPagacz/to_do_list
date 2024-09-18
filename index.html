@@ -10,26 +10,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="stats_container">
-            <div class="details">
-                <h1>To do list</h1>
-                <div id="progress_bar">
-                    <div id="progress"></div>
-                </div>
-            </div>
-            <div class="stats_numbers">
-                <p id="numbers"> 2 / 3</p>
+    <!--Main div for to do list-->
+    <div id="container">
+        <!--Header of the construction-->
+        <div id="header">
+            <h1>To do list</h1>
+        </div>
+
+        <div id="todo-form">
+            <input type="text" id="input-box" class="input-item" placeholder="Add text" name="input_box">
+            <button id="input-button" onclick="addTask()">+</button>
+        </div>
+
+        <!--Task list-->
+        <h2>Task List</h2>
+        <ul id="list-container"></ul>
+
+        <hr/>
+        <!--Task list counter-->
+        <div class="counter-container">
+            <div id="task-counters">
+                Completed: <span id="completed-couter">0</span> | Uncompleted: <span id="uncompleted-couter">0</span>
             </div>
         </div>
-        <form action="">
-            <input type="text" placeholder="Give me a task">
-            <button type="submit">+</button>
-        </form>
-
-        <ul class="task_list">
-            
-        </ul>
     </div>
     <script src="app.js"></script>
 </body>
